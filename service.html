@@ -1,150 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fretty S. Portfolio - Showcasing projects in frontend development, UI/UX design, and quality assurance."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, frontend developer, UI/UX design, quality assurance, Fretty Sirait"
+    />
+    <meta name="author" content="Fretty Debora Sirait" />
     <title>Fretty S. | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Tautan CSS dengan path relatif -->
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/service.css">
+    <!-- Favicon (tambahkan file favicon.png di folder assets jika belum ada) -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
 
-    <!-- Preload Lucide untuk memastikan dimuat lebih awal -->
-    <link rel="preload" href="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js" as="script">
-</head>
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<body>
-    <!-- Navbar dari layout.html (berasal dari navbar.html) -->
-    <nav class="navbar">
-        <div class="brand">Fretty S.</div>
-        <ul class="nav-menu">
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/index.html" class="active">Service</a></li>
-            <li><a href="/assets/cv_fretty.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        </ul>
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/service.css" />
+
+    <!-- Preload Lucide Icons -->
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="brand">Fretty S.</div>
+      <ul class="nav-menu">
+        <li><a href="about.html" aria-label="About page">About</a></li>
+        <li>
+          <a href="service.html" class="active" aria-label="Services page"
+            >Service</a
+          >
+        </li>
+        <li>
+          <a
+            href="assets/cv_fretty.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Fretty's Resume"
+            >Resume</a
+          >
+        </li>
+      </ul>
     </nav>
 
-    <!-- Content for <main> in layout.html -->
-    <main>
-        <!-- Hero Section -->
-        <div class="hero-wrapper">
-            <svg class="curve-text-svg" viewBox="0 0 1000 210" width="1000" height="220">
-                <defs>
-                    <path id="curve" d="M90,160 Q560,90 990,180" />
-                </defs>
-                <text font-size="46" fill="#fff" font-family="Arial" font-weight="bold" letter-spacing="2">
-                    <textPath xlink:href="#curve" startOffset="0">Hi, this is me Fretty Debora Sirait</textPath>
-                </text>
-            </svg>
-            <div class="circle-bg"></div>
-            <div class="desc">
-                I am an undergraduate student majoring in Informatics,<br />
-                with a keen interest in design, frontend development,<br />
-                and quality assurance testing.
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-wrapper" aria-labelledby="hero-title">
+      <svg
+        class="curve-text-svg"
+        viewBox="0 0 1000 210"
+        width="1000"
+        height="220"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <path id="curve" d="M90,160 Q560,90 990,180" />
+        </defs>
+        <text
+          font-size="46"
+          fill="#fff"
+          font-family="Arial, sans-serif"
+          font-weight="bold"
+          letter-spacing="2"
+        >
+          <textPath xlink:href="#curve" startOffset="0">
+            Hi, this is me Fretty Debora Sirait
+          </textPath>
+        </text>
+      </svg>
+      <div class="circle-bg"></div>
+      <div class="desc">
+        Saya adalah mahasiswa S1 jurusan Informatika,<br />
+        dengan minat besar dalam desain, pengembangan frontend,<br />
+        dan pengujian jaminan kualitas.
+      </div>
+    </section>
+
+    <!-- Latest Projects -->
+    <section class="latest-project-section" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Proyek Terbaru</h2>
+
+      <!-- Project 1 -->
+      <article class="project-wrapper">
+        <div class="project-image">
+          <img
+            src="assets/projek1.png"
+            alt="Preview of Operation Management System mobile app"
+            loading="lazy"
+          />
         </div>
+        <div class="project-text">
+          <h3 class="project-title">
+            Pengembangan Operation Management System dalam aplikasi mobile
+            berbasis PHP dan menggunakan CodeIgniter 3
+          </h3>
+          <p class="project-description">
+            Aplikasi mobile untuk manajemen izin/cuti, absensi online, booking
+            ruang, dan surat tugas. Bertujuan meningkatkan efisiensi dan
+            transparansi administrasi di perusahaan. <br />
+            Sebagai
+            <span class="wavy-underline-projek1">Mobile Frontend Developer</span
+            >, saya bertanggung jawab dalam merancang antarmuka pengguna mobile
+            menggunakan Figma dan mengimplementasikannya ke dalam kode
+            <span class="wavy-underline-projek1">Flutter</span> dengan prinsip
+            clean architecture. Saya membangun widget yang responsif dan dapat
+            digunakan kembali untuk berbagai ukuran layar, serta berkolaborasi
+            erat dengan tim desain dan backend demi memastikan pengiriman fitur
+            yang lancar. <br />
+            <b>Tech Stack:</b> Flutter, Dart, Figma, Android Studio, GitHub,
+            ClickUp
+          </p>
+          <a
+            href="https://git.cni.net.id/gitama/mobile-oms"
+            target="_blank"
+            class="github-button"
+            >GitHub</a
+          >
+        </div>
+      </article>
 
-        <!-- Latest Projects -->
-        <section class="latest-project-section">
-            <h2 class="section-title">Latest Project</h2>
+      <!-- Project 2 -->
+      <article class="project-wrapper">
+        <div class="project-image">
+          <img
+            src="assets/projek2.png"
+            alt="Preview of SIMBA management system"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-text">
+          <h3 class="project-title">
+            Sistem Informasi Manajemen Bimbingan Mahasiswa dan Perwalian (SIMBA)
+          </h3>
+          <p class="project-description">
+            Sistem yang memfasilitasi pengelolaan data pelanggaran, poin
+            kebaikan, serta konseling dan perwalian untuk meningkatkan
+            komunikasi antara mahasiswa, dosen wali, dan orang tua. <br />
+            Dalam pengembangan SIMBA, saya berperan sebagai
+            <span class="wavy-underline-projek2"
+              >UI/UX Designer & Scrum Master</span
+            >
+            untuk versi website (Jan–Mar 2025) dan sebagai
+            <span class="wavy-underline-projek2"
+              >Mobile Frontend Developer</span
+            >
+            untuk versi mobile (Mar–Mei 2025). Di versi website, saya merancang
+            UI/UX menggunakan <span class="wavy-underline-projek2">Figma</span>,
+            membuat wireframe dan prototipe, serta memimpin tim sebagai Scrum
+            Master. Di versi mobile, saya membangun antarmuka aplikasi
+            menggunakan
+            <span class="wavy-underline-projek2">Jetpack Compose</span> dan
+            berkolaborasi dengan tim backend. <br />
+            <b>Tech Stack:</b> Figma, Coda, Kotlin, Jetpack Compose, Android
+            Studio, Retrofit, DataStore, GitHub
+          </p>
+          <a
+            href="https://github.com/pardzheri/pam-2025-simba"
+            target="_blank"
+            class="github-button"
+            >GitHub</a
+          >
+        </div>
+      </article>
 
-            <!-- Project 1 -->
-            <div class="project-wrapper">
-                <div class="project-image">
-                    <img src="assets/projek1.png" alt="Project Preview" />
-                </div>
-                <div class="project-text">
-                    <h3 class="project-title">Pengembangan Operation Management System dalam aplikasi mobile berbasis PHP dan menggunakan CodeIgniter 3</h3>
-                    <p class="project-description">
-                        Aplikasi mobile untuk manajemen izin/cuti, absensi online, booking ruang, dan surat tugas.
-                        Bertujuan meningkatkan efisiensi dan transparansi administrasi di perusahaan. <br />
-                        Sebagai <span class="wavy-underline-projek1">Mobile Frontend Developer</span>, saya bertanggung jawab
-                        dalam merancang antarmuka pengguna mobile menggunakan Figma dan
-                        mengimplementasikannya ke dalam kode <span class="wavy-underline-projek1">Flutter</span> dengan prinsip
-                        clean architecture. Saya membangun widget yang responsif dan
-                        dapat digunakan kembali untuk berbagai ukuran layar, serta berkolaborasi erat dengan tim desain dan backend
-                        demi memastikan pengiriman fitur yang lancar. <br />
-                        <b>Tech Stack:</b> Flutter, Dart, Figma, Android Studio, GitHub, ClickUp
-                    </p>
-                    <a href="https://git.cni.net.id/gitama/mobile-oms" target="_blank" class="github-button">GitHub</a>
-                </div>
-            </div>
+      <!-- Project 3 -->
+      <article class="project-wrapper">
+        <div class="project-image">
+          <img
+            src="assets/projek3.png"
+            alt="Preview of S1 Informatika website"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-text">
+          <h3 class="project-title">
+            Pengembangan Website Program Studi S1 Informatika
+          </h3>
+          <p class="project-description">
+            Website S1 Informatika IT Del sebagai portal informasi kurikulum,
+            dosen, sejarah, dan kegiatan akademik mahasiswa. <br />
+            Sebagai
+            <span class="wavy-underline-projek3">Quality Assurance (QA)</span>
+            dalam pengembangan website ini, saya bertanggung jawab dalam
+            memelihara dan memperbarui test script otomatis menggunakan Katalon,
+            menganalisis hasil pengujian, serta melaporkan dan memvalidasi
+            perbaikan bug. <br />
+            <b>Tech Stack:</b> Katalon, Coda
+          </p>
+          <a
+            href="https://github.com/viktrislubis/website-prodi-proyekbesar"
+            target="_blank"
+            class="github-button"
+            >GitHub</a
+          >
+        </div>
+      </article>
 
-            <!-- Project 2 -->
-            <div class="project-wrapper">
-                <div class="project-image">
-                    <img src="assets/projek2.png" alt="Project Preview" />
-                </div>
-                <div class="project-text">
-                    <h3 class="project-title">Sistem Informasi Manajemen Bimbingan Mahasiswa dan Perwalian (SIMBA)</h3>
-                    <p class="project-description">
-                        Sistem yang memfasilitasi pengelolaan data pelanggaran, poin kebaikan, serta konseling dan
-                        perwalian untuk meningkatkan komunikasi antara mahasiswa, dosen wali, dan orang tua. <br />
-                        Dalam pengembangan SIMBA, saya berperan sebagai
-                        <span class="wavy-underline-projek2">UI/UX Designer & Scrum Master</span> untuk versi website (Jan–Mar 2025) dan
-                        sebagai <span class="wavy-underline-projek2">Mobile Frontend Developer</span> untuk versi mobile (Mar–Mei 2025).
-                        Di versi website, saya merancang UI/UX menggunakan
-                        <span class="wavy-underline-projek2">Figma</span>, membuat wireframe dan prototipe,
-                        serta memimpin tim sebagai Scrum Master. Di versi mobile, saya membangun antarmuka aplikasi menggunakan
-                        <span class="wavy-underline-projek2">Jetpack Compose</span> dan berkolaborasi dengan tim backend. <br />
-                        <b>Tech Stack:</b> Figma, Coda, Kotlin, Jetpack Compose, Android Studio, Retrofit, DataStore, GitHub
-                    </p>
-                    <a href="https://github.com/pardzheri/pam-2025-simba" target="_blank" class="github-button">GitHub</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-wrapper">
-                <div class="project-image">
-                    <img src="assets/projek3.png" alt="Project Preview" />
-                </div>
-                <div class="project-text">
-                    <h3 class="project-title">Informatics Undergraduate Program Website Development</h3>
-                    <p class="project-description">
-                        Website S1 Informatika IT Del sebagai portal informasi kurikulum, dosen, sejarah, dan kegiatan akademik mahasiswa. <br />
-                        Sebagai <span class="wavy-underline-projek3">Quality Assurance (QA)</span> dalam pengembangan website ini, saya bertanggung jawab
-                        dalam memelihara dan memperbarui test script otomatis menggunakan Katalon, menganalisis hasil pengujian,
-                        serta melaporkan dan memvalidasi perbaikan bug. <br />
-                        <b>Tech Stack:</b> Katalon, Coda
-                    </p>
-                    <a href="https://github.com/viktrislubis/website-prodi-proyekbesar" target="_blank" class="github-button">GitHub</a>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-wrapper">
-                <div class="project-image">
-                    <img src="assets/projek4.png" alt="Project Preview" />
-                </div>
-                <div class="project-text">
-                    <h3 class="project-title">Website Development of SMA Negeri 1 Balige</h3>
-                    <p class="project-description">
-                        Website profil sekolah dengan tampilan modern dan responsif, dilengkapi informasi
-                        akademik dan kegiatan sekolah, serta mudah diakses di berbagai perangkat.<br />
-                        Sebagai <span class="wavy-underline-projek4">Web Developer</span>, saya mengembangkan
-                        tampilan antarmuka menggunakan <span class="wavy-underline-projek4">Laravel dan Blade Templating</span>,
-                        dan berkolaborasi dengan tim backend untuk integrasi data. <br />
-                        <b>Tech Stack:</b> Blade, CSS, JavaScript, PHP, SQLyog, XAMPP, GitHub
-                    </p>
-                    <a href="https://github.com/delcom-itdel/pabwe-pkm-proyek-2024-k2" target="_blank" class="github-button">GitHub</a>
-                </div>
-            </div>
-        </section>
-    </main>
+      <!-- Project 4 -->
+      <article class="project-wrapper">
+        <div class="project-image">
+          <img
+            src="assets/projek4.png"
+            alt="Preview of SMA Negeri 1 Balige website"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-text">
+          <h3 class="project-title">
+            Pengembangan Website SMA Negeri 1 Balige
+          </h3>
+          <p class="project-description">
+            Website profil sekolah dengan tampilan modern dan responsif,
+            dilengkapi informasi akademik dan kegiatan sekolah, serta mudah
+            diakses di berbagai perangkat.<br />
+            Sebagai <span class="wavy-underline-projek4">Web Developer</span>,
+            saya mengembangkan tampilan antarmuka menggunakan
+            <span class="wavy-underline-projek4"
+              >Laravel dan Blade Templating</span
+            >, dan berkolaborasi dengan tim backend untuk integrasi data. <br />
+            <b>Tech Stack:</b> Blade, CSS, JavaScript, PHP, SQLyog, XAMPP,
+            GitHub
+          </p>
+          <a
+            href="https://github.com/delcom-itdel/pabwe-pkm-proyek-2024-k2"
+            target="_blank"
+            class="github-button"
+            >GitHub</a
+          >
+        </div>
+      </article>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© <span id="year"></span> Fretty’s Portfolio</p>
+      <p>© <span id="year"></span> Fretty’s Portfolio</p>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
     <script src="js/service.js"></script>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-</body>
-
+  </body>
 </html>

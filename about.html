@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Fretty S. - Learn about my journey in frontend development, UI/UX design, and quality assurance as an Informatics student." />
+    <meta name="keywords" content="Fretty Sirait, about, frontend developer, UI/UX design, quality assurance, Informatics student" />
+    <meta name="author" content="Fretty Debora Sirait" />
     <title>Fretty S. | About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/service.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Preload Lucide untuk memastikan dimuat lebih awal -->
-    <link rel="preload" href="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js" as="script">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/service.css" />
+
+    <!-- Preload Lucide Icons -->
+    <link rel="dns-prefetch" href="https://unpkg.com" />
 </head>
 
 <body>
-    <!-- Navbar dari layout.html -->
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="brand">Fretty S.</div>
         <ul class="nav-menu">
-          <li><a href="/about.html" class="active">About</a></li>
-          <li><a href="/index.html">Service</a></li>
-            <li><a href="/assets/cv_fretty.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="about.html" class="active" aria-label="About page">About</a></li>
+            <li><a href="service.html" aria-label="Services page">Service</a></li>
+            <li><a href="assets/cv_fretty.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Fretty's Resume">Resume</a></li>
         </ul>
     </nav>
 
     <!-- Konten Halaman About -->
-    <main class="main-content">
+    <main class="main-content" aria-labelledby="about-title">
         <div class="top-circle-bg"></div>
-        <div class="text">Hai, Saya Fretty</div>
-
- superlative="best" adjective="creative" noun="solution" />
+        <h1 class="text" id="about-title">Hai, Saya Fretty</h1>
 
         <div class="content-container">
             <div class="text-block">
@@ -60,25 +67,25 @@
     <!-- Footer -->
     <footer class="footer-container">
         <div class="social-icons">
-            <a href="https://www.instagram.com/frettyyy._/" target="_blank" class="social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/frettyyy._/" target="_blank" class="social-icon" aria-label="Instagram profile">
                 <i data-lucide="instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/in/frettydeborasirait/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/frettydeborasirait/" target="_blank" class="social-icon" aria-label="LinkedIn profile">
                 <i data-lucide="linkedin"></i>
             </a>
-            <a href="mailto:frettysirait26@gmail.com" class="social-icon" aria-label="Email">
+            <a href="mailto:frettysirait26@gmail.com" class="social-icon" aria-label="Send email">
                 <i data-lucide="mail"></i>
             </a>
         </div>
+        <p>© <span id="year"></span> Fretty’s Portfolio</p>
     </footer>
 
-    <!-- Script Lucide dan JS -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
-    <script src="/js/about.js"></script>
+    <script src="js/about.js"></script>
     <script>
         lucide.createIcons();
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>
