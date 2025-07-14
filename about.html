@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fretty S. | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/service.css">
+
+    <!-- Preload Lucide untuk memastikan dimuat lebih awal -->
+    <link rel="preload" href="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js" as="script">
+</head>
+
+<body>
+    <!-- Navbar dari layout.html -->
+    <nav class="navbar">
+        <div class="brand">Fretty S.</div>
+        <ul class="nav-menu">
+          <li><a href="/about.html" class="active">About</a></li>
+          <li><a href="/index.html">Service</a></li>
+            <li><a href="/assets/cv_fretty.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Halaman About -->
+    <main class="main-content">
+        <div class="top-circle-bg"></div>
+        <div class="text">Hai, Saya Fretty</div>
+
+ superlative="best" adjective="creative" noun="solution" />
+
+        <div class="content-container">
+            <div class="text-block">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Sebelum mengetahui jalur karier yang ingin saya ambil, saya selalu penasaran tentang bagaimana teknologi dapat menyelesaikan masalah nyata. Sebagai mahasiswa Informatika di Institut Teknologi Del, saya tertarik pada tiga hal:
+                    <span class="wavy-underline">Desain,</span>
+                    <span class="wavy-underline">pengembangan frontend,</span> dan
+                    <span class="wavy-underline">jaminan kualitas (QA).</span><br>
+                    Saya menikmati merancang antarmuka pengguna yang intuitif dan terasa sederhana serta bermakna. Bagi saya, desain adalah tentang bagaimana perasaan pengguna saat berinteraksi dengan produk. Baik itu memilih palet warna yang tepat atau menata layar di Jetpack Compose, saya menyukai tantangan untuk membuat pengalaman digital yang indah dan mudah digunakan.<br>
+                    Saat menjelajahi pengembangan frontend, saya juga tertarik pada apa yang terjadi setelah sesuatu dibuat. Saya ingin memastikan setiap fitur bekerja sesuai yang diharapkan—di sinilah saya menemukan passion saya untuk QA. Saya menikmati menguji perangkat lunak, menemukan kasus tepi, dan membantu memastikan semuanya berjalan lancar untuk pengguna akhir.
+                </p>
+            </div>
+
+            <div class="text-block">
+                <h2>Mengapa ketiganya?</h2>
+                <p>Karena semuanya tentang mengutamakan pengguna. Baik melalui desain yang penuh perhatian, kode yang bersih, atau pengujian yang presisi, saya percaya pada penciptaan teknologi yang fungsional, andal, dan menyenangkan untuk digunakan.</p>
+            </div>
+
+            <div class="text-block">
+                <h2>Apa selanjutnya?</h2>
+                <p>Saya bersemangat untuk terus belajar, membangun, dan berkolaborasi. Saya ingin berkembang sebagai desainer, penggemar frontend, dan kontributor QA—sehingga saya bisa menjadi bagian dari tim yang menciptakan produk yang disukai dan dipercaya oleh pengguna.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/frettyyy._/" target="_blank" class="social-icon" aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/frettydeborasirait/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:frettysirait26@gmail.com" class="social-icon" aria-label="Email">
+                <i data-lucide="mail"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script Lucide dan JS -->
+    <script src="https://unpkg.com/lucide@0.441.0/dist/umd/lucide.min.js"></script>
+    <script src="/js/about.js"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
